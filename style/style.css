@@ -1,0 +1,118 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+/* font */
+#name {
+  font-family: 'Lobster', cursive;
+}
+.nav-link.active {
+  color: #fff;
+  background-color: #f4623a;
+}
+/* home-page */
+.hero-area {
+  padding-top: 15rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(
+      to top,
+      rgba(37, 44, 56, 0.185) 0%,
+      rgb(0, 140, 255) 100%
+    ),
+    url('../images/backgrounds/home-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.pp {
+  width: 10rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* about-me */
+.page-section {
+  padding: 8rem 0;
+}
+.aboutme {
+  background: linear-gradient(
+    to bottom,
+    rgba(43, 103, 231, 0.692) 0%,
+    rgba(47, 213, 255, 0.959) 100%
+  );
+}
+hr.divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  opacity: 1;
+}
+hr.divider-light {
+  background-color: #fff;
+}
+
+/* projects */
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.card .backgroundEffect {
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+}
+
+.card:hover {
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
+}
+
+.card:hover .backgroundEffect {
+  bottom: 0;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background: #1b9ce3;
+  animation: popBackground 0.5s ease-in;
+}
+@keyframes popBackground {
+  0% {
+    height: 0%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  25% {
+    height: 25%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+  }
+  50% {
+    height: 50%;
+    border-top-left-radius: 75%;
+    border-top-right-radius: 75%;
+  }
+
+  75% {
+    height: 75%;
+    border-top-left-radius: 85%;
+    border-top-right-radius: 85%;
+  }
+
+  100% {
+    height: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+}
