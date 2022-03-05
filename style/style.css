@@ -150,7 +150,12 @@ a {
   height: auto;
 }
 .detaills-wrap {
-  background: linear-gradient(to bottom,  rgba(211, 211, 211, 0.4) 50%, rgba(211, 211, 211, 0.40) 50%), url('/images/contactdetails.jpg');
+  background: linear-gradient(
+      to bottom,
+      rgba(211, 211, 211, 0.4) 50%,
+      rgba(211, 211, 211, 0.4) 50%
+    ),
+    url('/images/contactdetails.jpg');
 }
 .form-wrap {
   background: url('/images/stars.png');
@@ -159,176 +164,133 @@ a {
   border-radius: 10px;
   background: rgba(216, 216, 216, 0.308);
 }
+.details a:hover{
+  color: rgb(0, 247, 255);
+}
 /* footer */
-.footer-59391 {
-  border-top: 1px solid #efefef;
-  background-color: #fff;
-  font-family: 'Poppins', sans-serif;
-  padding: 4rem 0;
-}
-.footer-59391 .site-logo {
-  color: #fff;
-}
-.footer-59391 .site-logo a {
-  font-size: 30px;
-  color: #000;
-  font-weight: 900;
-}
-.footer-59391 .social-icons li {
-  display: inline-block;
-}
-.footer-59391 .social-icons li a {
-  display: inline-block;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-
-.footer-59391 .nav-links li {
-  display: inline-block;
-}
-.footer-59391 .nav-links li a {
-  font-size: 14px;
-  color: #777;
-  padding: 10px;
-}
-.footer-59391 .nav-links.nav-right li:last-child a {
-  padding-right: 0;
-}
-.footer-59391 .copyright {
-  border-top: 1px solid #efefef;
-  padding-top: 50px;
-  text-align: center;
-  color: #777;
-}
-
-
-.icons {
-    display: inline-flex;
-}
-
 .icons a {
-    margin: 0 25px;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    position: relative;
+  margin: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
 }
 
 .icons a .layer {
-    width: 55px;
-    height: 55px;
-    transition: transform 0.3s;
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
 }
 
-.icons a:hover .layer {
-    transform: rotate(-35deg) skew(20deg);
+.icons a:nth-child(even):hover .layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+.icons a:nth-child(odd):hover .layer {
+  transform: rotate(35deg) skew(20deg);
 }
 
 .icons a .layer span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: all 0.3s;
 }
 
 .icons a .layer span.fab {
-    font-size: 30px;
-    line-height: 55px;
-    text-align: center;
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
 }
 
 .icons a:hover .layer span:nth-child(1) {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 .icons a:hover .layer span:nth-child(2) {
-    opacity: 0.4;
-    transform: translate(5px, -5px);
+  opacity: 0.4;
+  transform: translate(5px, -5px);
 }
 
 .icons a:hover .layer span:nth-child(3) {
-    opacity: 0.6;
-    transform: translate(10px, -10px);
+  opacity: 0.6;
+  transform: translate(10px, -10px);
 }
 
 .icons a:hover .layer span:nth-child(4) {
-    opacity: 0.8;
-    transform: translate(15px, -15px);
+  opacity: 0.8;
+  transform: translate(15px, -15px);
 }
 
 .icons a:hover .layer span:nth-child(5) {
-    opacity: 1;
-    transform: translate(20px, -20px);
+  opacity: 1;
+  transform: translate(20px, -20px);
 }
 
 .icons a:nth-child(1) .layer span,
 .icons a:nth-child(1) .text {
-    color: #4267B2;
-    border-color: #4267B2;
+  color: #4267b2;
+  border-color: #4267b2;
 }
 
 .icons a:nth-child(2) .layer span,
 .icons a:nth-child(2) .text {
-    color: #1DA1F2;
-    border-color: #1DA1F2;
+  color: #14191e;
+  border-color: #14191e;
 }
 
 .icons a:nth-child(3) .layer span,
 .icons a:nth-child(3) .text {
-    color: #E1306C;
-    border-color: #E1306C;
+  color: #e1306c;
+  border-color: #e1306c;
 }
 
 .icons a:nth-child(4) .layer span,
 .icons a:nth-child(4) .text {
-    color: #2867B2;
-    border-color: #2867B2;
+  color: #2867b2;
+  border-color: #2867b2;
 }
 
 .icons a:nth-child(5) .layer span,
 .icons a:nth-child(5) .text {
-    color: #ff0000;
-    border-color: #ff0000;
+  color: #1c93e4;
+  border-color: #1c93e4;
 }
 
 .icons a:hover:nth-child(1) .layer span {
-    box-shadow: -1px 1px 3px #4267B2;
+  box-shadow: -1px 1px 3px #4267b2;
 }
 
 .icons a:hover:nth-child(2) .layer span {
-    box-shadow: -1px 1px 3px #1DA1F2;
+  box-shadow: -1px 1px 3px #14191e;
 }
 
 .icons a:hover:nth-child(3) .layer span {
-    box-shadow: -1px 1px 3px #E1306C;
+  box-shadow: -1px 1px 3px #e1306c;
 }
 
 .icons a:hover:nth-child(4) .layer span {
-    box-shadow: -1px 1px 3px #2867B2;
+  box-shadow: -1px 1px 3px #2867b2;
 }
 
 .icons a:hover:nth-child(5) .layer span {
-    box-shadow: -1px 1px 3px #ff0000;
+  box-shadow: -1px 1px 3px #1c93e4;
 }
 
 .icons a .text {
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
-    opacity: 0;
-    font-weight: 500;
-    transform: translateX(-50%);
-    transition: bottom 0.3s ease, opacity 0.3s ease;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  opacity: 0;
+  font-weight: 500;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
 }
 
 .icons a:hover .text {
-    bottom: -35px;
-    opacity: 1;
+  bottom: -25px;
+  opacity: 1;
 }

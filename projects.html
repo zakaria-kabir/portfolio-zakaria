@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/projects.css">
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Zakaria- projects</title>
 </head>
 
@@ -19,35 +16,305 @@
 <body>
 
     <!-- nav -->
-<header class="header_area">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="test.html"><img src="../images/logo1.png" alt=""></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
-                            href="index.html">Home</a></li>
-                    <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
-                            href="#about">About</a></li>
-                    <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
-                            href="#projects">Projects</a></li>
-                    <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
-                            href="#skills">Skills</a></li>
-                    <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
-                            href="#contact">Contact</a></li>
-                </ul>
+    <header class="header_area">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html"><img src="../images/logo1.png" alt=""></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="index.html">Home</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="#about">About</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="index.html#projects">Projects</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="index.html#skills">Skills</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- proj details -->
+    <section class="wrap px-md-5">
+        <div class="card mb-5" id="seas-card" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-8 col-sm-auto d-flex align-self-center p-3 justify-content-center">
+                    <div id="seas" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#seas" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#seas" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#seas" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#seas" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <img src="./images/proj_snaps/seas/1.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/proj_snaps/seas/2.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/proj_snaps/seas/3.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/proj_snaps/seas/4.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#seas" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#seas" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-auto d-flex justify-content-center">
+                    <div class="card-body align-self-center text-center">
+                        <h2 class="card-title text-decoration-underline">Student Enrollment Analysis System</h2>
+                        <p>The project's goal is to develop a software system for stakeholders and institutional bodies
+                            to retrieve statistical
+                            data on school-level revenue analysis, classroom requirement analysis based on class slot,
+                            classroom allocation
+                            recommendations based on IUB best resource utilization, and IUB resource calculation.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-</header>
-    <!-- personal details -->
+        <div class="card mb-5" id="Drowsiness-card" style="max-width: 100%;">
+            <div class="row g-0">
+                <div
+                    class="col-md-8 col-sm-auto d-flex align-self-center p-3 justify-content-center order-md-1 order-sm-0">
+                    <div id="Drowsiness" class="carousel carousel-dark carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="5000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#Drowsiness" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#Drowsiness" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <img src="./images/proj_snaps/Drowsiness/1.jpg" class="d-block w-100 img-fluid"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/proj_snaps/Drowsiness/2.jpg" class="d-block w-100 img-fluid"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <video class="ratio ratio-16x9" controls>
+                                    <source src="/images/proj_snaps/Drowsiness/3.mp4" type=video/mp4>
+                                </video>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Drowsiness"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Drowsiness"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-auto d-flex justify-content-center order-md-0 order-sm-1">
+                    <div class="card-body align-self-center text-center">
+                        <h2 class="card-title text-decoration-underline">Drowsiness Detector</h2>
+                        <p><i>This project is designed to alert the drivers from falling asleep during driving due to
+                                drowsiness or fatigue.</i> In this project we design goggle/spectacles in which IR
+                            sensors and buzzer are fitted. This
+                            entire set up is worn by the driver. The setup consists of many more things such as Arduino
+                            Nano, Buzzer, IR Obstacle avoidance sensor, ON/OFF buttons, each connect with one
+                            battery. This entire setup works in this way, as soon as the driver wears the goggle IR
+                            sensors checks the eyes are closed or not, if the eyes are not closed then it again checks
+                            for it, this loop continues until the eyes are found closed. As soon as the eyes are found
+                            closed, it again goes for a second check and again if the eyes are found closed then the
+                            buzzer is blown, and it continues blowing until the eyes are not open and then buzzer will
+                            be off. We over here set a condition if eyes found closed for more than one second then
+                            the driver is drowsy. In short we can say whenever the driver feels drowsy his eyes start to
+                            blink for more than one second, this status is detected by the IR sensor and the buzzer is
+                            blown to make the driver conscious.
+                            Future planning:
+                        <ol class="text-start">
+                            <li>Alcohol detection: Using Alcohol Sensor “MQ-3” we can detect whether driver is
+                                drunk or not. Being drunk can also cause drowsiness.</li>
+                            <li>Warn the owner: Using “GSM” module to send warning to the owner. Also using
+                                “GPS” sensor we can track his location to send to the owner. Also, we can send
+                                his data to nearby police or traffic control station.</li>
+                        </ol>
+                        <b>This is only a DEMO project</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-5" id="LC-card" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-8 col-sm-auto d-flex align-self-center p-3 justify-content-center">
+                    <div id="LC" class="carousel carousel-dark carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="5000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#LC" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#LC" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#LC" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <img src="./images/proj_snaps/lcmanagement/1.jpg" class="d-block w-100 img-fluid"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/proj_snaps/lcmanagement/2.jpg" class="d-block w-100 img-fluid"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/proj_snaps/lcmanagement/3.jpg" class="d-block w-100 img-fluid"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/proj_snaps/lcmanagement/4.jpg" class="d-block w-100 img-fluid"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#LC" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#LC" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-auto d-flex justify-content-center">
+                    <div class="card-body align-self-center text-center">
+                        <h2 class="card-title text-decoration-underline">LC Management Simulation</h2>
+                        <p><i>A JavaFx desktop application based on LC management
+                                of a bank. </i>Record & follow up of the item’s imported budget and the detailed
+                            information of the credit, invoices and all item’s
+                            expenses with recalculation for them after distributing all different expenses, taxes and
+                            adding the inventory
+                            transactions, also extracting a report of the detailed & summary information of the credit’s
+                            cost.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-5" id="rc-card" style="max-width: 100%;">
+            <div class="row g-0">
+                <div
+                    class="col-md-8 col-sm-auto d-flex align-self-center p-3 justify-content-center order-md-1 order-sm-0">
+                    <div id="rc" class="carousel carousel-dark carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="5000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#waterpump" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#rc" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#rc" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#rc" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#rc" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <img src="./images/proj_snaps/rc/1.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/proj_snaps/rc/2.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/proj_snaps/rc/3.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/proj_snaps/rc/4.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <video class="ratio ratio-4x3" controls>
+                                    <source src="/images/proj_snaps/rc/5.mp4" type=video/mp4>
+                                </video>
+                            </div>
+                            <div class="carousel-item">
+                                <video class="ratio ratio-21x9" controls>
+                                    <source src="/images/proj_snaps/rc/6.mp4" type=video/mp4>
+                                </video>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#waterpump"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#waterpump"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-auto d-flex justify-content-center order-md-0 order-sm-1">
+                    <div class="card-body align-self-center text-center">
+                        <h2 class="card-title text-decoration-underline">RC Car</h2>
+                        <p>This bot was designed for <i>INTRA IUB TECH FEST AUTUMN 2019.</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-5" id="waterpump-card" style="max-width: 100%;">
+            <div class="row g-0">
+                <div
+                    class="col-md-8 col-sm-auto d-flex align-self-center p-3 justify-content-center order-md-1 order-sm-0">
+                    <img src="./images/proj_snaps/waterpump/1.jpg" class="img-fluid " alt="...">
+                </div>
+                <!-- no need of image gallary here -->
+                <div class="col-md-4 col-sm-auto d-flex justify-content-center order-md-0 order-sm-1">
+                    <div class="card-body align-self-center text-center">
+                        <h2 class="card-title text-decoration-underline">Automatic Waterpump Simulation</h2>
+                        <p>This project is concerned with the use of Microcontroller for the water level controller. The
+                            heart of the Water Level Controller using 8051 Microcontroller is the AT89C51
+                            Microcontroller. The different pins of the microcontroller are responsible for the
+                            indication
+                            of EMPTY, QUARTER, HALF, 3/4 FULL or FULL level of water. One port is connected to the
+                            collector of transistor for the input of current and the other port is connected to the data
+                            pins of LCD and control pins. The LCD is programmed to display the levels of water in a
+                            tank. A pin is connected to the motor so that it can be turned off or on automatically
+                            based on water level. This explains the use of a programmable LCD as a indicator of water
+                            level as well as the relay connected to the motor to turn ON and OFF depending upon
+                            the level of water.
 
-    <div class="container wrap">
-
-    </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
