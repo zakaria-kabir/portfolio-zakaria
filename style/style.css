@@ -168,6 +168,9 @@ a {
   color: rgb(0, 247, 255);
 }
 /* footer */
+.beforeend{
+  background: url("/images/backgrounds/bg-dots.png");
+}
 .icons a {
   margin: 0 20px;
   text-decoration: none;

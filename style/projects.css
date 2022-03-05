@@ -11,3 +11,18 @@ html {
 .carousel-fade .active.carousel-item-end {
   transition: opacity 0s 2.6s;
 } */
+.wrap {
+  background: rgb(148, 167, 233);
+  background: linear-gradient(
+    340deg,
+    rgba(148, 167, 233, 0.6643032212885154) 0%,
+    rgba(232, 242, 244, 0.742734593837535) 31%,
+    rgba(196, 180, 217, 0.7091211484593838) 47%,
+    rgba(86, 215, 221, 0.742734593837535) 63%,
+    rgba(244, 97, 167, 1) 100%
+  );
+
+}
+.contailer-fluid{
+    margin-top: 7rem;
+}
