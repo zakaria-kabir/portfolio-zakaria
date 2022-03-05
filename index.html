@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/style.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -22,12 +27,30 @@
 <body>
 
     <!-- nav -->
-    <div id="nav-placeholder"></div>
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("/include/nav.html");
-        });
-    </script>
+    <header class="header_area">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="test.html"><img src="../images/logo1.png" alt=""></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="index.html">Home</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="#about">About</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="#projects">Projects</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="#skills">Skills</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- hero-area -->
     <section class="hero-area">
         <div class="text-center">
@@ -41,8 +64,8 @@
     <section class="page-section bg-info aboutme" id="about">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-6">
-                    <img src="./images/aboutme.png" alt="">
+                <div class="col-lg-6 text-center">
+                    <img src="./images/aboutme.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-6 text-center align-self-center">
                     <h2 class="text-white mt-0">About Me</h2>
@@ -67,8 +90,7 @@
         </div>
     </section>
     <!-- projects -->
-    <section class="bg-info aboutme pt-5" id="projects">
-
+    <section class="bg-info projects pt-5" id="projects">
         <div class="container px-4 px-lg-5">
             <h2 class="text-white text-center mb-5">Projects</h2>
             <hr class="divider divider-light" />
@@ -76,67 +98,397 @@
                 <div class="col d-flex align-items-stretch">
                     <div class="card shadow-sm text-center border-0 mb-4">
                         <div class="backgroundEffect"></div>
-                        <img src="./images/proj1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <img src="./images/seas.png" class="card-img-top p-lg-5 ps-2 pe-2" alt="...">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Student Enrollment Analysis System</h5>
                             <p class="card-text">A full-fledged web application project on Database Management using
                                 Python (Django), MySQL, (HTML, CSS, Bootstrap, Js
                             </p>
-                            <a href="projects.html" class="btn btn-primary rounded-pill">Details</a>
+                            <a href="projects.html"
+                                class="btn btn-primary rounded-pill mt-auto align-self-center text-black">Details</a>
+                            <img style="position: absolute; left: 0; bottom: 0; z-index: -1 " src="images/wave.svg "
+                                alt=" ">
                         </div>
                     </div>
                 </div>
                 <!-- d-flex align-items-stretch -> to make all cards same highet -->
-                
                 <div class="col d-flex align-items-stretch">
                     <div class="card shadow-sm text-center border-0 mb-4">
                         <div class="backgroundEffect"></div>
-                        <img src="./images/proj1.jpg" class="card-img-top" alt="...">
+                        <img src="./images/drowsy-driving.png" class="card-img-top p-lg-5 ps-2 pe-2 " alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Drowsiness Detector</h5>
                             <p class="card-text">A hardware project based on Microprocessor Interfacing & Assembly
                                 Language.</p>
-                            <a href="projects.html" class="btn btn-primary rounded-pill mt-auto align-self-center">Details</a>
+                            <a href="projects.html"
+                                class="btn btn-primary rounded-pill mt-auto align-self-center text-black">Details</a>
+                            <img style="position: absolute; left: 0; bottom: 0; z-index: -1 " src="images/wave.svg "
+                                alt=" ">
                         </div>
                     </div>
                 </div>
                 <div class="col d-flex align-items-stretch">
                     <div class="card shadow-sm text-center border-0 mb-4">
                         <div class="backgroundEffect"></div>
-                        <img src="./images/proj1.jpg" class="card-img-top" alt="...">
+                        <img src="./images/simulation.png" class="card-img-top p-lg-5 ps-2 pe-2 pt-2" alt="...">
                         <div class="card-body  d-flex flex-column">
                             <h5 class="card-title">Simulation on LC Management</h5>
                             <p class="card-text">A JavaFx desktop application based on LC management of a bank.</p>
-                            <a href="projects.html" class="btn btn-primary rounded-pill mt-auto align-self-center">Details</a>
+                            <a href="projects.html"
+                                class="btn btn-primary rounded-pill mt-auto align-self-center    text-black">Details</a>
+                            <img style="position: absolute; left: 0; bottom: 0; z-index: -1 " src="images/wave.svg "
+                                alt=" ">
                         </div>
                     </div>
                 </div>
                 <div class="col d-flex align-items-stretch">
                     <div class="card shadow-sm text-center border-0 mb-4">
                         <div class="backgroundEffect"></div>
-                        <img src="./images/proj1.jpg" class="card-img-top" alt="...">
+                        <img src="./images/rc-car.png" class="card-img-top p-lg-5 ps-2 pe-2 pt-2" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">RC Bot</h5>
                             <p class="card-text">A JavaFx desktop application based on LC management of a bank.</p>
-                            <a href="projects.html" class="btn btn-primary rounded-pill mt-auto align-self-center">Details</a>
+                            <a href="projects.html"
+                                class="btn btn-primary rounded-pill mt-auto align-self-center    text-black">Details</a>
+                            <img style="position: absolute; left: 0; bottom: 0; z-index: -1 " src="images/wave.svg "
+                                alt=" ">
                         </div>
                     </div>
                 </div>
                 <div class="col d-flex align-items-stretch">
                     <div class="card shadow-sm text-center border-0 mb-4">
                         <div class="backgroundEffect"></div>
-                        <img src="./images/proj1.jpg" class="card-img-top" alt="...">
+                        <img src="./images/waterpump.png" class="card-img-top p-lg-5 ps-2 pe-2" alt="...">
                         <div class="card-body  d-flex flex-column">
                             <h5 class="card-title">Automatic Waterpump</h5>
                             <p class="card-text">A JavaFx desktop application based on LC management of a bank.</p>
-                            <a href="projects.html" class="btn btn-primary rounded-pill mt-auto align-self-center">Details</a>
+                            <a href="projects.html"
+                                class="btn btn-primary rounded-pill mt-auto align-self-center    text-black">Details</a>
+                            <img style="position: absolute; left: 0; bottom: 0; z-index: -1 " src="images/wave.svg "
+                                alt=" ">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Skills -->
+    <section class="bg-info skills p-md-5 py-5" id="skills">
+        <div class="container-fluid">
+            <h2 class="text-center text-black">Skills</h2>
+            <hr class="divider divider-dark" />
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-sm-12 text-center">
+                    <h2>Programming Skills</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>C/C++</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>Java</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>Python</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>Django</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>HTML</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>CSS</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>JavaScript</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>MySql</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm-12 text-center">
+                    <h2>Professional Skills</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>MS Office</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>Teamwork</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>Leadership</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>Time Management</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5>Comminication</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact me -->
+    <section class="bg-info contact-wrap p-md-5 py-5" id="contact">
+        <div class="container contact-container p-5">
+            <h2 class="text-center">Contact</h2>
+            <hr class="divider divider-dark" />
+            <div class="row my-5">
+                <div class="col-md-7 col-sm-12 order-md-1 bg-light p-5 form-wrap">
+                    <form class="row g-3 ">
+                        <div class="col-md-6">
+                            <label for="name " class="form-label ">Name</label>
+                            <input type="text " class="form-control " id="name " placeholder="Your Name ">
+                        </div>
+                        <div class="col-md-6 ">
+                            <label for="email " class="form-label ">Enter Email</label>
+                            <input type="email " class="form-control " id="email " placeholder="Your email ">
+                        </div>
+                        <div class="col-12 ">
+                            <label for="texrarea " class="form-label ">Message</label>
+                            <textarea
+                                style="border-radius: 5px; height: 100px; width: 100%; border: 1px solid rgb(197, 192, 192); "
+                                id="message" placeholder="Write me a message"></textarea>
+                        </div>
+                        <div class="col-12  text-center">
+                            <button style="background: #5A4FDC; padding: 12px 30px; color: white; font-weight: bold; "
+                                type="submit " class="btn">Send Message <span><i
+                                        class="fa-solid fa-paper-plane "></i></span> </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 col-sm-12 order-md-0 p-3 detaills-wrap d-flex justify-content-center">
+                    <div class="details text-center text-white align-self-center ">
+                        <p><i class="fa-solid fa-envelope "></i> <a href="mailto: zakariak5469@gmail.com">
+                                : zakariak5469@gmail.com</a></p>
+                        <p><span><i class="fa-solid fa-link "></i></span><a href="https://zakaria-kabir.me/">
+                                : zakaria-kabir.me</a></p>
+                        <p><span><i class="fa-solid fa-phone "></i></span> +8801705300966</p>
+                        <p><span><i class="fa-solid fa-location-dot "></i></span> Adabar, Dhaka, 1207, Bangladesh</p>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer-59391">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="site-logo">
+                        <a href="#">Colorlib</a>
+                    </div>
+                </div>
+                <div class="col-md-8 text-md-right">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/rakibulislamsumon.777" target="_blank">
+                            <div class="layer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fab fa-facebook-f"></span>
+                            </div>
+                            <div class="text">
+                                Facebook
+                            </div>
+                        </a>
+                        <a href="https://github.com/rakibulsumon" target="_blank">
+                            <div class="layer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fab fa-github"></span>
+                            </div>
+                            <div class="text">
+                                Github
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/rakibulislamsumon.777" target="_blank">
+                            <div class="layer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fab fa-instagram"></span>
+                            </div>
+                            <div class="text">
+                                Instagram
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rakibul-islam-sumon-86920320a/" target="_blank">
+                            <div class="layer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fab fa-linkedin-in"></span>
+                            </div>
+                            <div class="text">
+                                Linkedin
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/rakibulislamsumon.777" target="_blank">
+                            <div class="layer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fab fa-youtube"></span>
+                            </div>
+                            <div class="text">
+                                YouTube
+                            </div>
+                        </a>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md-6 ">
+                    <ul class="nav-links list-unstyled nav-left">
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <ul class="nav-links list-unstyled nav-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our works</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="copyright">
+                        <p><small>Copyright 2019. All Rights Reserved.</small></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
     <!-- social icon -->
     <!-- <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
         <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-facebook"></i></a></li>

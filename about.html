@@ -19,108 +19,146 @@
 <body>
 
     <!-- nav -->
-    <div id="nav-placeholder"></div>
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("/include/nav.html");
-        });
-    </script>
+    <header class="header_area">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="test.html"><img src="../images/logo1.png" alt=""></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="index.html">Home</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="#about">About</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="index.html#projects">Projects</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="index.html#skills">Skills</a></li>
+                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                                href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- personal details -->
+    <section class="bg-info wrap pt-5">
+        <div class="container mt-5 py-5" id="about">
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-auto">
+                        <img src="./images/personal-details.jpg" class="img-fluid " alt="...">
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="card-body">
+                            <h2 class="card-title text-decoration-underline">Personal Details</h2>
+                            <p class="card-text">Age: 22 years</p>
+                            <p class="card-text">Marital Status: Unmarried</p>
+                            <p class="card-text">Nationality: Bangladeshi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-auto">
+                        <img src="./images/education.jpg" class="img-fluid ps-3 pt-3" alt="...">
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="card-body">
+                            <h2 class="card-title text-decoration-underline">Education</h2>
+                            <ul>
+                                <li>
+                                    <i>JAN, 2019-Present</i><br>
+                                    <h3 class="title fw-bold">Independent University, Bangladesh (IUB)</h3>
+                                    <section class="educationtext">
+                                        <strong>Started my semester on:</strong> Summer, 2019 <br>
+                                        <strong>My major is: </strong> CSE
+                                        <br>
+                                        <strong>My minor is: </strong> Big Data and HPC <br>
+                                        <strong>Some mentionable course I have completed so far:</strong><br>
+                                        <ul>
+                                            <li>Data Structure</li>
+                                            <li>Database Management</li>
+                                            <li>Algorithms</li>
+                                            <li>Object-Oriented Programming</li>
+                                            <li>Finite Automata and Machine Computability</li>
+                                            <li>Complier Construction</li>
+                                            <li>Cloud Computing</li>
+                                        </ul>
+                                    </section>
+                                </li>
+                                <br>
+                                <li>
+                                    <i>JUL, 2016 - JUN, 2018</i><br>
+                                    <h3 class="title fw-bold">Notre Dame College, Dhaka</h3>
+                                    <section class="educationtext">
+                                        <ul>
+                                            <li><strong>Higher Secondary Certificate (HSC)</strong></li>
+                                            <strong>Group: </strong> Science <br>
+                                            <strong>GPA: </strong> 5.00 <br>
+                                        </ul>
+                                    </section>
+                                </li>
+                                <br>
+                                <li>
+                                    <i>2014 - 2016</i><br>
+                                    <h3 class="title fw-bold">Momtaz Mustofa Idead School & College, Bhangura, Pabna
+                                    </h3>
+                                    <section class="educationtext">
+                                        <ul>
+                                            <li><strong>Secondary School Certificate (SSC)</strong></li>
+                                            <strong>Group: </strong> Science <br>
+                                            <strong>GPA: </strong> 5.00 <br>
+                                        </ul>
+                                    </section>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-auto">
+                        <img src="./images/ex.jpg" class="img-fluid " alt="...">
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="card-body">
+                            <h2 class="card-title text-decoration-underline">Extracurricular Activities</h2>
+                            <ul>
+                                <li>Member of IEEE Computer Society Club</li>
+                                <li>Member at Notre Dame Outward Bound Adventure Club</li>
+                                <li>Member at Notre Dame English Club</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-auto d-flex align-self-center">
+                        <img src="./images/languages.png" class="img-fluid " alt="...">
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="card-body">
+                            <h2 class="card-title text-decoration-underline">Language Efficiency</h2>
+                            <ul>
+                                <li>Bengali- Native</li>
+                                <li>English- Fluent</li>
+                                <li>Hindi- Beginner</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="container wrap">
-        <div class="card mb-3" style="max-width: 100%;">
-            <div class="row g-0">
-                <div class="col-md-auto">
-                    <img src="./images/personal-details.jpg" class="img-fluid " alt="...">
-                </div>
-                <div class="col-md-auto">
-                    <div class="card-body">
-                        <h2 class="card-title text-decoration-underline">Personal Details</h2>
-                        <p class="card-text">Age: 22 years</p>
-                        <p class="card-text">Marital Status: Unmarried</p>
-                        <p class="card-text">Nationality: Bangladeshi</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card mb-3" style="max-width: 100%;">
-            <div class="row g-0">
-                <div class="col-md-auto">
-                    <img src="./images/education.jpg" class="img-fluid ps-3 pt-3" alt="...">
-                </div>
-                <div class="col-md-auto">
-                    <div class="card-body">
-                        <h2 class="card-title text-decoration-underline">Education</h2>
-                        <ul>
-                            <li>
-                                <i>JAN, 2019-Present</i><br>
-                                <h3 class="title fw-bold">Independent University, Bangladesh (IUB)</h3>
-                                <section class="educationtext">
-                                    <strong>Started my semester on:</strong> Summer, 2019 <br>
-                                    <strong>My major is: </strong> CSE
-                                    <br>
-                                    <strong>My minor is: </strong> Big Data and HPC <br>
-                                    <strong>Some mentionable course I have completed so far:</strong><br>
-                                    <ul>
-                                        <li>Data Structure</li>
-                                        <li>Database Management</li>
-                                        <li>Algorithms</li>
-                                        <li>Object-Oriented Programming</li>
-                                        <li>Finite Automata and Machine Computability</li>
-                                        <li>Complier Construction</li>
-                                        <li>Cloud Computing</li>
-                                    </ul>
-                                </section>
-                            </li>
-                            <br>
-                            <li>
-                                <i>JUL, 2016 - JUN, 2018</i><br>
-                                <h3 class="title fw-bold">Notre Dame College, Dhaka</h3>
-                                <section class="educationtext">
-                                    <ul>
-                                        <li><strong>Higher Secondary Certificate (HSC)</strong></li>
-                                        <strong>Group: </strong> Science <br>
-                                        <strong>GPA: </strong> 5.00 <br>
-                                    </ul>
-                                </section>
-                            </li>
-                            <br>
-                            <li>
-                                <i>2014 - 2016</i><br>
-                                <h3 class="title fw-bold">Momtaz Mustofa Idead School & College, Bhangura, Pabna</h3>
-                                <section class="educationtext">
-                                    <ul>
-                                        <li><strong>Secondary School Certificate (SSC)</strong></li>
-                                        <strong>Group: </strong> Science <br>
-                                        <strong>GPA: </strong> 5.00 <br>
-                                    </ul>
-                                </section>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card mb-3" style="max-width: 100%;">
-            <div class="row g-0">
-                <div class="col-md-auto">
-                    <img src="./images/ex.jpg" class="img-fluid " alt="...">
-                </div>
-                <div class="col-md-auto">
-                    <div class="card-body">
-                        <h2 class="card-title text-decoration-underline">Extracurricular Activities</h2>
-                        <ul>
-                            <li>Member of IEEE Computer Society Club</li>
-                            <li>Member at Notre Dame Outward Bound Adventure Club</li>
-                            <li>Member at Notre Dame English Club</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap js -->
-        <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
-
 
 </html>
