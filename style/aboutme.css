@@ -4,13 +4,23 @@ html {
   height: 100%;
 }
 .wrap {
-  background: rgb(148, 167, 233);
+  background: rgb(77, 128, 118);
   background: linear-gradient(
-    340deg,
-    rgba(148, 167, 233, 0.6643032212885154) 0%,
-    rgba(232, 242, 244, 0.742734593837535) 31%,
-    rgba(196, 180, 217, 0.7091211484593838) 47%,
-    rgba(86, 215, 221, 0.742734593837535) 63%,
-    rgba(244, 97, 167, 1) 100%
+    20deg,
+    rgb(104, 81, 143) 16%,
+    rgba(0, 201, 167, 1) 36%,
+    rgba(0, 146, 184, 1) 59%,
+    rgba(250, 234, 255, 1) 71%,
+    rgba(77, 128, 118, 1) 92%
   );
+}
+h1,
+h2,
+h3,
+h4
+{
+  font-family: 'Hubballi', cursive;
+}
+h5, p, .wrap li {
+  font-family: 'Comfortaa', cursive;
 }
