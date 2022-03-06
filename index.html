@@ -27,7 +27,7 @@
 <body>
 
     <!-- nav -->
-    <header class="header_area">
+    <header class="header_area" id="header">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="index.html"><img src="../images/logo1.png" alt=""></a>
@@ -52,22 +52,28 @@
         </nav>
     </header>
     <!-- hero-area -->
-    <section class="hero-area">
-        <div class="text-center">
-            <img src="images/zakaria.png" alt="profile img" class="pp pb-5">
-            <h1 class="text-white fw-bolder text-uppercase" id="name">md. zakaria kabir</h1>
-            <p><i>Undergraduate Student</i></p><br>
-            <a class="btn btn-light btn-xl" href="#about">Explore</a>
+    <section id="hero">
+        <div class="hero container d-flex align-items-center justify-content-start min-vh-100 ">
+            <div>
+                <img src="images/zakaria.png" alt="profile img" class="pp rounded-circle pb-5">
+                <div>
+                    <h1 id="">Hi, There<span></span></h1>
+                    <h1 id="">I am<span></span></h1>
+                    <h1 class="display-3 text-uppercase" id="name">md. zakaria kabir<span></span></h1>
+                    <p class="text-light"><i>Undergraduate Student</i></p><br>
+                    <a class="btn text-white border-white btn-xl cta" href="#about">Explore</a>
+                </div>
+            </div>
         </div>
     </section>
     <!-- About-->
     <section class="page-section bg-info aboutme" id="about">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="container px-4 px-lg-5 min-vh-100 d-flex flex-column align-items-stretch justify-content-center ">
+            <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-6 text-center">
                     <img src="./images/aboutme.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-lg-6 text-center align-self-center">
+                <div class="col-lg-6 text-center  text-white align-self-center">
                     <h2 class="text-white mt-0">About Me</h2>
                     <hr class="divider divider-light" />
                     <p class="text-white-75 mb-4">Hi, I'm Md. Zakaria Kabir, an undergraduate student at Computer
@@ -83,7 +89,7 @@
                         an ability
                         to learn and
                         master new technologies.</p>
-                    <a class="btn btn-light btn-xl" href="about.html">Explore More</a>
+                    <a class="btn btn-light btn-xl  text-white" href="about.html">Explore More</a>
                 </div>
 
             </div>
@@ -173,13 +179,16 @@
         </div>
     </section>
     <!-- Skills -->
-    <section class="bg-info skills p-md-5 py-5" id="skills">
-        <div class="container-fluid">
-            <h2 class="text-center text-black">Skills</h2>
-            <hr class="divider divider-dark" />
-            <div class="row justify-content-center">
+    <section class="bg-info skills text-white" id="skills">
+        <div class="container-fluid min-vh-100 d-flex flex-column align-items-stretch justify-content-center">
+            <div>
+                <h2 class="text-center">Skills</h2>
+                <hr class="divider divider-light" />
+            </div>
+            <div class="row">
                 <div class="col-xl-6 col-sm-12 text-center">
                     <h2>Programming Skills</h2>
+                    <hr class="divider text-danger" />
                     <div class="row">
                         <div class="col-6">
                             <h5>C/C++</h5>
@@ -279,6 +288,7 @@
                 </div>
                 <div class="col-xl-6 col-sm-12 text-center">
                     <h2>Professional Skills</h2>
+                    <hr class="divider text-danger" />
                     <div class="row">
                         <div class="col-6">
                             <h5>MS Office</h5>
@@ -344,8 +354,10 @@
         </div>
     </section>
     <!-- contact me -->
-    <section class="bg-info contact-wrap p-md-5 py-5" id="contact">
-        <div class="container contact-container p-5">
+    <section class="bg-dark contact-wrap d-flex flex-column justify-content-center align-self-center min-vh-100"
+        id="contact">
+        <div class="container contact-container p-md-5">
+            <!-- <img src="/images/moon.png" alt="" id="moon"> -->
             <h2 class="text-center">Contact</h2>
             <hr class="divider divider-dark" />
             <div class="row my-5">
@@ -386,9 +398,9 @@
         </div>
     </section>
     <!-- footer -->
-    <footer class="text-center">
+    <footer class="text-center" id="footer">
         <div class="container-fluid p-0">
-            <div class="beforeend row p-4">
+            <div class="beforeend row g-0 p-4">
                 <div class="col-md-4">
                     <div class="site-logo my-2">
                         <a href="#"><img src="./images/logo1.png" alt=""></a>
