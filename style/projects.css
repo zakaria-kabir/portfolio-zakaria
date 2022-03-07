@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
 body,
 html {
   width: 100%;
   height: 100%;
+}
+/* aos overflow bug fix for mobile device */
+body {
+  overflow-x: hidden;
 }
 /* font */
 h1,
@@ -20,7 +28,7 @@ p,
 }
 /* header */
 .nav-link {
-  color: #ffb0d8;
+  color: #f4623a;
   font-size: large;
 }
 /* proj */
@@ -32,12 +40,20 @@ p,
   transition: opacity 0s 2.6s;
 } */
 .carousel-indicators [data-bs-target] {
-    width: 10px; 
-    height: 10px; 
-    border-radius: 100%; 
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
 }
+body,
 .wrap {
-  background: linear-gradient(80deg,#1dffff, #ec524b, #ff65e5, #ffc815);
+  background: linear-gradient(
+    80deg,
+    rgb(20, 40, 80),
+    rgb(12, 123, 147),
+    rgb(39, 73, 109),
+    rgb(0, 168, 204)
+  );
+  color: white;
   animation: gradient 5s ease infinite;
   background-size: 400% 400%;
 }
@@ -55,4 +71,25 @@ p,
   100% {
     background-position: 0% 50%;
   }
+}
+/* floatig button back to top  */
+.arrow {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9;
+}
+.arrow a {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  background: transparent;
+  display: block;
+}
+.arrow a span {
+  color: #000000;
+  cursor: pointer;
+}
+.arrow .fas:hover {
+  color: #00ff62;
 }

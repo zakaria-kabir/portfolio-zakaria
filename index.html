@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- AOS -->
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Zakaria Kabir</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
 </head>
 
 
@@ -27,9 +28,9 @@
     </script>
     <!-- nav -->
     <header class="header_area" id="header">
-        <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-lg" id="mainNav">
+        <nav class="navbar navbar-expand-lg bg-black py-3 shadow-lg" id="mainNav">
             <div class="container-fluid px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html"><img src="./images/logo1.png" alt=""></a>
+                <a class="navbar-brand " href="index.html"><img src="./images/logo1.png" alt=""></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation"><span class=""><img src="./images/options.png"
@@ -53,8 +54,9 @@
     </header>
     <!-- hero-area -->
     <section id="hero">
-        <div class="hero container d-flex align-items-center justify-content-start min-vh-100" data-aos="fade-right" data-aos-duration="1500">
-            <div>
+        <div class="hero container d-flex align-items-center justify-content-start min-vh-100" data-aos="fade-right"
+            data-aos-duration="1500">
+            <div class="mb-5">
                 <img src="images/zakaria.png" alt="profile img" class="pp rounded-circle pb-5">
                 <div>
                     <h1 id="">Hi, There<span></span></h1>
@@ -90,22 +92,28 @@
                         an ability
                         to learn and
                         master new technologies.</p>
-                    <a class="btn btn-light btn-xl  text-white" href="about.html">Explore More</a>
+                    <a class="btn btn-light btn-xl" href="about.html">
+                        <p class="p-0 m-0">Explore More</p>
+                    </a>
+                    <div>
+                        <a href="./images/CV/Zakaria_CV.pdf" class="buttonDownload mt-4 mb-5 rounded-3">
+                            <p class="p-0 m-0 fs-0">CV</p>
+                        </a>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
     <!-- projects -->
     <section class="bg-info projects pt-5" id="projects">
-        <div class="container px-4 px-lg-5">
+        <div class="container px-5 px-lg-5">
             <h2 class="text-white text-center mb-5">Projects</h2>
             <hr class="divider divider-light" />
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
                 <div class="col d-flex align-items-stretch">
-                    <div class="card shadow-lg text-center border-0 mb-4" data-aos="fade-down"
-                     data-aos-duration="1000">
-                        <div class="backgroundEffect"></div>
+                    <div class="card shadow-lg text-center border-0 mb-4" data-aos="fade-down" data-aos-duration="1000"
+                        id="projcard">
+                        <div class="bgeffect"></div>
                         <img src="./images/seas.png" class="card-img-top p-lg-5 ps-2 pe-2" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold">Student Enrollment Analysis System</h5>
@@ -119,12 +127,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- d-flex align-items-stretch -> to make all cards same highet -->
                 <div class="col d-flex align-items-stretch">
-                    <div class="card shadow-lg text-center border-0 mb-4" data-aos="fade-up"
-                     data-aos-duration="1000"
-                     data-aos-delay="100">
-                        <div class="backgroundEffect"></div>
+                    <div class="card shadow-lg text-center border-0 mb-4" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="100" id="projcard">
+                        <div class="bgeffect"></div>
                         <img src="./images/drowsy-driving.png" class="card-img-top p-lg-5 ps-2 pe-2 " alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold">Drowsiness Detector</h5>
@@ -138,10 +144,9 @@
                     </div>
                 </div>
                 <div class="col d-flex align-items-stretch">
-                    <div class="card shadow-lg text-center border-0 mb-4" data-aos="fade-down"
-                     data-aos-duration="1000"
-                     data-aos-delay="200">
-                        <div class="backgroundEffect"></div>
+                    <div class="card shadow-lg text-center border-0 mb-4" data-aos="fade-down" data-aos-duration="1000"
+                        data-aos-delay="200" id="projcard">
+                        <div class="bgeffect"></div>
                         <img src="./images/simulation.png" class="card-img-top p-lg-5 ps-2 pe-2 pt-2" alt="...">
                         <div class="card-body  d-flex flex-column">
                             <h5 class="card-title fw-bold">Simulation on LC Management</h5>
@@ -154,10 +159,9 @@
                     </div>
                 </div>
                 <div class="col d-flex align-items-stretch">
-                    <div class="card shadow-lg text-center border-0 mb-4"data-aos="fade-up"
-                     data-aos-duration="1000"
-                     data-aos-delay="300">
-                        <div class="backgroundEffect"></div>
+                    <div class="card shadow-lg text-center border-0 mb-4" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="300" id="projcard">
+                        <div class="bgeffect"></div>
                         <img src="./images/rc-car.png" class="card-img-top p-lg-5 ps-2 pe-2 pt-2" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold">RC Bot</h5>
@@ -171,10 +175,9 @@
                     </div>
                 </div>
                 <div class="col d-flex align-items-stretch">
-                    <div class="card shadow-lg text-center border-0 mb-4"data-aos="fade-down"
-                     data-aos-duration="1000"
-                     data-aos-delay="400">
-                        <div class="backgroundEffect"></div>
+                    <div class="card shadow-lg text-center border-0 mb-4" data-aos="fade-down" data-aos-duration="1000"
+                        data-aos-delay="400" id="projcard">
+                        <div class="bgeffect"></div>
                         <img src="./images/waterpump.png" class="card-img-top p-lg-5 ps-2 pe-2" alt="...">
                         <div class="card-body  d-flex flex-column">
                             <h5 class="card-title fw-bold">Automatic Waterpump</h5>
@@ -198,9 +201,7 @@
                 <hr class="divider divider-light" />
             </div>
             <div class="row">
-                <div class="col-xl-6 col-sm-12 text-center" data-aos="zoom-in-right"
-                     data-aos-duration="1000"
-                     >
+                <div class="col-xl-6 col-sm-12 text-center" data-aos="zoom-in-right" data-aos-duration="1000">
                     <h2>Programming Skills</h2>
                     <hr class="divider text-danger" />
                     <div class="row">
@@ -300,8 +301,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-sm-12 text-center" data-aos="zoom-in-left"
-                     data-aos-duration="1000">
+                <div class="col-xl-6 col-sm-12 text-center" data-aos="zoom-in-left" data-aos-duration="1000">
                     <h2>Professional Skills</h2>
                     <hr class="divider text-danger" />
                     <div class="row">
@@ -371,8 +371,7 @@
     <!-- contact me -->
     <section class="bg-dark contact-wrap d-flex flex-column justify-content-center align-self-center min-vh-100"
         id="contact">
-        <div class="container contact-container p-md-5" data-aos="flip-right"
-                     data-aos-duration="1000">
+        <div class="container contact-container p-md-5" data-aos="flip-right" data-aos-duration="1000">
             <!-- <img src="/images/moon.png" alt="" id="moon"> -->
             <h2 class="text-center text-light">Contact</h2>
             <hr class="divider divider-light" />
@@ -501,6 +500,10 @@
             </div>
         </div>
     </footer>
+    <!-- floatig button back to top -->
+    <div class="arrow">
+        <a href="#" title="Back to Top"><span class="fas fa-angle-up"></span></a>
+    </div>
     <!-- Bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
 </body>

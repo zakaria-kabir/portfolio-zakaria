@@ -10,6 +10,11 @@
 html {
   scroll-behavior: smooth;
 }
+/* aos overflow bug fix for mobile device */
+html,
+body {
+  overflow-x: hidden;
+}
 /* font */
 #name {
   font-family: 'Rancho', cursive;
@@ -49,14 +54,16 @@ a {
       transparent 0.25em
     )
     center/1em 1.2em;
+  color: white;
   transition: all 0.5s ease-in-out;
 }
 .btn:hover {
   border: black;
+  color: rgb(0, 0, 0);
   transform: scale(1.1);
-  background: radial-gradient(circle, #052fe7a9 0.25em, transparent 0.25em)
+  background: radial-gradient(circle, #d7d6ee 0.25em, transparent 0.25em)
     center/0.1em 0.1em;
-  box-shadow: 2px 3px rgba(75, 57, 233, 0.459);
+  box-shadow: 2.5px 3.5px rgba(88, 92, 119, 0.801);
 }
 #contact .btn:hover {
   border: black;
@@ -72,9 +79,12 @@ a {
 }
 /* home-page */
 .pp {
-  width: 18vw;
+  width: 15vw;
+  min-width: 10vh;
   height: auto;
   border-radius: 50%;
+  margin-top: -100px;
+  padding-top: -100px;
 }
 #hero > img {
   height: 100%;
@@ -134,7 +144,7 @@ a {
 #hero p {
   animation-delay: 4.5s;
 }
-#hero h1 span{
+#hero h1 span {
   position: absolute;
   top: 0;
   left: 0;
@@ -227,7 +237,7 @@ a {
   opacity: 0.7;
   z-index: -1;
 }
-.card {
+.projcard {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: #fff;
   transition: all 0.5s ease;
@@ -237,32 +247,32 @@ a {
   overflow: hidden;
 }
 
-.card .backgroundEffect {
+.card .bgeffect {
   bottom: 0;
   height: 0px;
   width: 100%;
 }
 
-.card:hover {
+#projcard:hover {
   color: rgb(153, 153, 153);
   transform: scale(1.1);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
 }
 
-.card:hover .backgroundEffect {
+.card:hover .bgeffect {
   bottom: 0;
-  height: 700px;
+  height: 100%;
   width: 100%;
   position: absolute;
   z-index: -1;
   background: linear-gradient(
     to bottom,
-    rgb(26, 80, 141) 0%,
-    rgb(193, 248, 207) 100%
+    rgb(204, 204, 204) 20%,
+    rgb(36, 47, 58) 80%
   );
-  animation: popBackground 0.5s ease-in;
+  animation: popbg 0.5s ease-in;
 }
-@keyframes popBackground {
+@keyframes popbg {
   0% {
     height: 0%;
     border-top-left-radius: 50%;
@@ -322,14 +332,6 @@ a {
 .details a {
   color: #00ff62;
 }
-/* .detaills-wrap {
-  background: linear-gradient(
-      to bottom,
-      rgba(51, 51, 51, 0.767) 50%,
-      rgba(51, 51, 51, 0.767) 50%
-    ),
-    url('../images/contactdetails.jpg');
-} */
 .form-wrap {
   background: url('../images/stars.png');
 }
@@ -365,7 +367,7 @@ a {
   transform: rotate(-35deg) skew(20deg);
 }
 .icons a:nth-child(odd):hover .layer {
-  transform: rotate(35deg) skew(20deg);
+  transform: rotate(20deg) skew(20deg);
 }
 
 .icons a .layer span {
@@ -470,9 +472,106 @@ a {
 }
 
 .icons a:hover .text {
-  bottom: -25px;
+  bottom: -28px;
   opacity: 1;
 }
 
 /* ................................. */
+/* cv download button */
+.buttonDownload {
+  display: inline-block;
+  position: relative;
+  padding: 10px 25px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  text-indent: 15px;
+  border: 1px solid;
+}
 
+.buttonDownload:hover {
+  background-color: rgb(58, 58, 58);
+  color: white;
+}
+
+.buttonDownload:before,
+.buttonDownload:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+  width: 15px;
+  height: 5px;
+  border-style: solid;
+  border-width: 0 3px 3px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  margin-top: -9px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+  animation: downloadArrow 2s linear infinite;
+  /* animation-play-state: paused; */
+}
+
+.buttonDownload:hover:before {
+  border-color: #4cc713;
+}
+
+.buttonDownload:hover:after {
+  border-top-color: #4cc713;
+  animation-play-state: running;
+}
+
+@keyframes downloadArrow {
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+
+  0.001% {
+    margin-top: -15px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 0;
+  }
+}
+/* floatig button back to top  */
+.arrow {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9;
+}
+.arrow a {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  background: transparent;
+  display: block;
+}
+.arrow a span {
+  color: #f2f2f2;
+  cursor: pointer;
+}
+.arrow .fas:hover {
+  color: #00ff62;
+}
