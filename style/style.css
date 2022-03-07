@@ -134,14 +134,23 @@ a {
 #hero p {
   animation-delay: 4.5s;
 }
-#hero h1 span,
-p span {
+#hero h1 span{
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 0;
   background-color: crimson;
+  animation: text_reveal_box 1s ease;
+  animation-delay: 0.5s;
+}
+#hero p span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgb(66, 112, 133);
   animation: text_reveal_box 1s ease;
   animation-delay: 0.5s;
 }
@@ -464,3 +473,6 @@ p span {
   bottom: -25px;
   opacity: 1;
 }
+
+/* ................................. */
+

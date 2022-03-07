@@ -9,12 +9,18 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/aboutme.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Zakaria- about</title>
 </head>
 
 
 <body>
-
+    <!-- aos initialization -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- nav -->
     <header class="header_area" id="header">
         <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-lg" id="mainNav">
@@ -46,7 +52,9 @@
     <!-- personal details -->
     <section class="bg-info wrap pt-5">
         <div class="container mt-5 py-5" id="about">
-            <div class="card bg-transparent mb-3 shadow-lg" style="max-width: 100%;">
+            <div class="card bg-transparent mb-3 shadow-lg" style="max-width: 100%;" data-aos="zoom-in-right"
+                     data-aos-duration="1000"
+                     data-aos-delay="100">
                 <div class="row g-0">
                     <div class="col-md-2">
                         <img src="./images/personal-details.jpg" class="img-fluid " alt="...">
@@ -61,7 +69,9 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-transparent mb-3 shadow-lg" style="max-width: 100%;">
+            <div class="card bg-transparent mb-3 shadow-lg" style="max-width: 100%;" data-aos="zoom-in-left"
+                     data-aos-duration="1000"
+                     data-aos-delay="200">
                 <div class="row g-0">
                     <div class="col-md-2  d-flex align-self-center justify-content-center">
                         <img src="./images/education.jpg" class="img-fluid ps-3 pt-3" alt="...">
@@ -120,7 +130,9 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-transparent mb-3 shadow-lg" style="max-width: 100%;">
+            <div class="card bg-transparent mb-3 shadow-lg" style="max-width: 100%;" data-aos="zoom-in-right"
+                     data-aos-duration="1000"
+                     data-aos-delay="300">
                 <div class="row g-0">
                     <div class="col-md-2  d-flex align-self-center justify-content-center">
                         <img src="./images/ex.jpg" class="img-fluid " alt="...">
@@ -137,7 +149,9 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-transparent mb-3 shadow-lg" style="max-width: 100%;">
+            <div class="card bg-transparent mb-3 shadow-lg" style="max-width: 100%;" data-aos="zoom-in-left"
+                     data-aos-duration="1000"
+                     data-aos-delay="400">
                 <div class="row g-0">
                     <div class="col-md-2 d-flex align-self-center justify-content-center">
                         <img src="./images/languages.png" class="img-fluid " alt="...">

@@ -13,12 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Zakaria Kabir</title>
 </head>
 
 
 <body>
-
+    <!-- aos initialization -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- nav -->
     <header class="header_area" id="header">
         <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-lg" id="mainNav">
@@ -26,19 +32,20 @@
                 <a class="navbar-brand" href="index.html"><img src="./images/logo1.png" alt=""></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation"><span class=""><img src="./images/options.png" alt=""></span></button>
+                    aria-label="Toggle navigation"><span class=""><img src="./images/options.png"
+                            alt=""></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a class="nav-link"
-                                href="index.html">Home</a></li>
-                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a class="nav-link"
-                                href="#about">About</a></li>
-                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a class="nav-link"
-                                href="#projects">Projects</a></li>
-                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a class="nav-link"
-                                href="#skills">Skills</a></li>
-                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a class="nav-link"
-                                href="#contact">Contact</a></li>
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a
+                                class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a
+                                class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a
+                                class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a
+                                class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a
+                                class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,7 +53,7 @@
     </header>
     <!-- hero-area -->
     <section id="hero">
-        <div class="hero container d-flex align-items-center justify-content-start min-vh-100">
+        <div class="hero container d-flex align-items-center justify-content-start min-vh-100" data-aos="fade-right" data-aos-duration="1500">
             <div>
                 <img src="images/zakaria.png" alt="profile img" class="pp rounded-circle pb-5">
                 <div>
@@ -61,12 +68,13 @@
     </section>
     <!-- About-->
     <section class="page-section bg-info aboutme" id="about">
-        <div class="container-fluid px-4 px-lg-5 min-vh-100 d-flex flex-column align-items-stretch justify-content-center ">
+        <div
+            class="container-fluid px-4 px-lg-5 min-vh-100 d-flex flex-column align-items-stretch justify-content-center ">
             <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-6 text-center" data-aos="zoom-in-right">
                     <img src="./images/aboutme.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-lg-6 text-center  text-white align-self-center">
+                <div class="col-lg-6 text-center  text-white align-self-center" data-aos="zoom-in-left">
                     <h2 class="text-white mt-0">About Me</h2>
                     <hr class="divider divider-light" />
                     <p class="text-white-75 mb-4">Hi, I'm Md. Zakaria Kabir, an undergraduate student at Computer
@@ -95,7 +103,8 @@
             <hr class="divider divider-light" />
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
                 <div class="col d-flex align-items-stretch">
-                    <div class="card shadow-sm text-center border-0 mb-4">
+                    <div class="card shadow-lg text-center border-0 mb-4" data-aos="fade-down"
+                     data-aos-duration="1000">
                         <div class="backgroundEffect"></div>
                         <img src="./images/seas.png" class="card-img-top p-lg-5 ps-2 pe-2" alt="...">
                         <div class="card-body d-flex flex-column">
@@ -112,7 +121,9 @@
                 </div>
                 <!-- d-flex align-items-stretch -> to make all cards same highet -->
                 <div class="col d-flex align-items-stretch">
-                    <div class="card shadow-sm text-center border-0 mb-4">
+                    <div class="card shadow-lg text-center border-0 mb-4" data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-delay="100">
                         <div class="backgroundEffect"></div>
                         <img src="./images/drowsy-driving.png" class="card-img-top p-lg-5 ps-2 pe-2 " alt="...">
                         <div class="card-body d-flex flex-column">
@@ -127,7 +138,9 @@
                     </div>
                 </div>
                 <div class="col d-flex align-items-stretch">
-                    <div class="card shadow-sm text-center border-0 mb-4">
+                    <div class="card shadow-lg text-center border-0 mb-4" data-aos="fade-down"
+                     data-aos-duration="1000"
+                     data-aos-delay="200">
                         <div class="backgroundEffect"></div>
                         <img src="./images/simulation.png" class="card-img-top p-lg-5 ps-2 pe-2 pt-2" alt="...">
                         <div class="card-body  d-flex flex-column">
@@ -141,12 +154,15 @@
                     </div>
                 </div>
                 <div class="col d-flex align-items-stretch">
-                    <div class="card shadow-sm text-center border-0 mb-4">
+                    <div class="card shadow-lg text-center border-0 mb-4"data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-delay="300">
                         <div class="backgroundEffect"></div>
                         <img src="./images/rc-car.png" class="card-img-top p-lg-5 ps-2 pe-2 pt-2" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold">RC Bot</h5>
-                            <p class="card-text">Hardware Remote Controlled car using Arduino Uno, Bluetooth Module, Motor driver, Motors, LiPo Battery.</p>
+                            <p class="card-text">Hardware Remote Controlled car using Arduino Uno, Bluetooth Module,
+                                Motor driver, Motors, LiPo Battery.</p>
                             <a href="projects.html#rc-card"
                                 class="btn btn-primary rounded-pill mt-auto align-self-center    text-black">Details</a>
                             <img style="position: absolute; left: 0; bottom: 0; z-index: -1 " src="images/wave.svg "
@@ -155,12 +171,15 @@
                     </div>
                 </div>
                 <div class="col d-flex align-items-stretch">
-                    <div class="card shadow-sm text-center border-0 mb-4">
+                    <div class="card shadow-lg text-center border-0 mb-4"data-aos="fade-down"
+                     data-aos-duration="1000"
+                     data-aos-delay="400">
                         <div class="backgroundEffect"></div>
                         <img src="./images/waterpump.png" class="card-img-top p-lg-5 ps-2 pe-2" alt="...">
                         <div class="card-body  d-flex flex-column">
                             <h5 class="card-title fw-bold">Automatic Waterpump</h5>
-                            <p class="card-text">A simulation based project to automate water motors using 8051 Microcontroller (AT89C51), Water sensor.</p>
+                            <p class="card-text">A simulation based project to automate water motors using 8051
+                                Microcontroller (AT89C51), Water sensor.</p>
                             <a href="projects.html#waterpump-card"
                                 class="btn btn-primary rounded-pill mt-auto align-self-center    text-black">Details</a>
                             <img style="position: absolute; left: 0; bottom: 0; z-index: -1 " src="images/wave.svg "
@@ -179,7 +198,9 @@
                 <hr class="divider divider-light" />
             </div>
             <div class="row">
-                <div class="col-xl-6 col-sm-12 text-center">
+                <div class="col-xl-6 col-sm-12 text-center" data-aos="zoom-in-right"
+                     data-aos-duration="1000"
+                     >
                     <h2>Programming Skills</h2>
                     <hr class="divider text-danger" />
                     <div class="row">
@@ -279,7 +300,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-sm-12 text-center">
+                <div class="col-xl-6 col-sm-12 text-center" data-aos="zoom-in-left"
+                     data-aos-duration="1000">
                     <h2>Professional Skills</h2>
                     <hr class="divider text-danger" />
                     <div class="row">
@@ -349,7 +371,8 @@
     <!-- contact me -->
     <section class="bg-dark contact-wrap d-flex flex-column justify-content-center align-self-center min-vh-100"
         id="contact">
-        <div class="container contact-container p-md-5">
+        <div class="container contact-container p-md-5" data-aos="flip-right"
+                     data-aos-duration="1000">
             <!-- <img src="/images/moon.png" alt="" id="moon"> -->
             <h2 class="text-center text-light">Contact</h2>
             <hr class="divider divider-light" />
@@ -357,18 +380,24 @@
                 <div class="col-md-7 col-sm-12 order-md-1 bg-light p-sm-5 pb-3 form-wrap rounded-3 bg-transparent">
                     <form class="row g-sm-3 ">
                         <div class="col-md-6">
-                            <label for="name " class="form-label "><p class="text-light">Name</p></label>
+                            <label for="name " class="form-label ">
+                                <p class="text-light">Name</p>
+                            </label>
                             <input type="text " class="form-control " id="name " placeholder="Your Name ">
                         </div>
                         <div class="col-md-6 ">
-                            <label for="email " class="form-label "><p class="text-light">Email</p></label>
+                            <label for="email " class="form-label ">
+                                <p class="text-light">Email</p>
+                            </label>
                             <input type="email " class="form-control " id="email " placeholder="Your email ">
                         </div>
                         <div class="col-12 ">
-                            <label for="texrarea " class="form-label "><p class="text-light">Message</p></label>
+                            <label for="texrarea " class="form-label ">
+                                <p class="text-light">Message</p>
+                            </label>
                             <textarea
                                 style="border-radius: 5px; height: 100px; width: 100%; border: 1px solid rgb(197, 192, 192); "
-                                id="message" ></textarea>
+                                id="message"></textarea>
                         </div>
                         <div class="col-12  text-center">
                             <button type="submit" class="btn btn-primary text-light">Send Message <span><i
@@ -379,9 +408,9 @@
                 <div class="col-md-5 col-sm-12 order-md-0 p-3 detaills-wrap d-flex justify-content-center">
                     <div class="details text-center text-white align-self-center ">
                         <p><i class="fa-solid fa-envelope "></i> :<a href="mailto: zakariak5469@gmail.com">
-                                 zakariak5469@gmail.com</a></p>
+                                zakariak5469@gmail.com</a></p>
                         <p><i class="fa-solid fa-link"></i> :<a href="https://zakaria-kabir.me/">
-                                 zakaria-kabir.me</a></p>
+                                zakaria-kabir.me</a></p>
                         <p><i class="fa-solid fa-phone "></i> : +8801705300966</p>
                         <p><i class="fa-solid fa-location-dot "></i> : Adabar, Dhaka, 1207, Bangladesh</p>
                     </div>
