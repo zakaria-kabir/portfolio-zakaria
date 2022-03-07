@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/style.css">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -25,23 +21,23 @@
 
     <!-- nav -->
     <header class="header_area" id="header">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
+        <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-lg" id="mainNav">
+            <div class="container-fluid px-4 px-lg-5">
                 <a class="navbar-brand" href="index.html"><img src="./images/logo1.png" alt=""></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation"><span class=""><img src="./images/options.png" alt=""></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a class="nav-link"
                                 href="index.html">Home</a></li>
-                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a class="nav-link"
                                 href="#about">About</a></li>
-                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a class="nav-link"
                                 href="#projects">Projects</a></li>
-                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a class="nav-link"
                                 href="#skills">Skills</a></li>
-                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a class="nav-link"
                                 href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -50,7 +46,7 @@
     </header>
     <!-- hero-area -->
     <section id="hero">
-        <div class="hero container d-flex align-items-center justify-content-start min-vh-100 ">
+        <div class="hero container d-flex align-items-center justify-content-start min-vh-100">
             <div>
                 <img src="images/zakaria.png" alt="profile img" class="pp rounded-circle pb-5">
                 <div>
@@ -355,27 +351,27 @@
         id="contact">
         <div class="container contact-container p-md-5">
             <!-- <img src="/images/moon.png" alt="" id="moon"> -->
-            <h2 class="text-center">Contact</h2>
-            <hr class="divider divider-dark" />
+            <h2 class="text-center text-light">Contact</h2>
+            <hr class="divider divider-light" />
             <div class="row my-5">
-                <div class="col-md-7 col-sm-12 order-md-1 bg-light p-sm-5 pb-3 form-wrap rounded-3">
+                <div class="col-md-7 col-sm-12 order-md-1 bg-light p-sm-5 pb-3 form-wrap rounded-3 bg-transparent">
                     <form class="row g-sm-3 ">
                         <div class="col-md-6">
-                            <label for="name " class="form-label ">Name</label>
+                            <label for="name " class="form-label "><p class="text-light">Name</p></label>
                             <input type="text " class="form-control " id="name " placeholder="Your Name ">
                         </div>
                         <div class="col-md-6 ">
-                            <label for="email " class="form-label ">Enter Email</label>
+                            <label for="email " class="form-label "><p class="text-light">Email</p></label>
                             <input type="email " class="form-control " id="email " placeholder="Your email ">
                         </div>
                         <div class="col-12 ">
-                            <label for="texrarea " class="form-label ">Message</label>
+                            <label for="texrarea " class="form-label "><p class="text-light">Message</p></label>
                             <textarea
                                 style="border-radius: 5px; height: 100px; width: 100%; border: 1px solid rgb(197, 192, 192); "
-                                id="message" placeholder="Write me a message"></textarea>
+                                id="message" ></textarea>
                         </div>
                         <div class="col-12  text-center">
-                            <button type="submit" class="btn btn-primary text-black">Send Message <span><i
+                            <button type="submit" class="btn btn-primary text-light">Send Message <span><i
                                         class="fa-solid fa-paper-plane "></i></span> </button>
                         </div>
                     </form>

@@ -16,33 +16,35 @@
 <body>
 
     <!-- nav -->
-    <header class="header_area">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html"><img src="../images/logo1.png" alt=""></a>
+    <header class="header_area" id="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-lg" id="mainNav">
+            <div class="container-fluid px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html"><img src="./images/logo1.png" alt=""></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation"><span class=""><img src="./images/options.png" alt=""></span></button>
+                    aria-label="Toggle navigation"><span class=""><img src="./images/options.png"
+                            alt=""></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
-                                href="index.html">Home</a></li>
-                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
-                                href="about.html">About</a></li>
-                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
-                                href="index.html#projects">Projects</a></li>
-                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
-                                href="index.html#skills">Skills</a></li>
-                        <li class="nav-item m-1 btn-light rounded-pill text-center"><a class="nav-link"
-                                href="index.html#contact">Contact</a></li>
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-lg-center text-end"><a
+                                class="nav-link " href="index.html">Home</a></li>
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-lg-center text-end"><a
+                                class="nav-link" href="index.html#about">About</a></li>
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-lg-center text-end"><a
+                                class="nav-link" href="#">Projects</a></li>
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-lg-center text-end"><a
+                                class="nav-link" href="index.html#skills">Skills</a></li>
+                        <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-lg-center text-end"><a
+                                class="nav-link" href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <!-- proj details -->
     <section class="wrap px-md-5 px-2 py-5">
-        <div class="card mb-5 mt-5" id="seas-card" style="max-width: 100%;">
+        <div class="card mb-5 mt-5 bg-transparent shadow-lg" id="seas-card" style="max-width: 100%;">
             <div class="row g-0">
                 <div class="col-md-8 col-sm-auto d-flex align-self-center p-3 justify-content-center">
                     <div id="seas" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="1000">
@@ -92,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-5" id="Drowsiness-card" style="max-width: 100%;">
+        <div class="card mb-5 bg-transparent shadow-lg" id="Drowsiness-card" style="max-width: 100%;">
             <div class="row g-0">
                 <div
                     class="col-md-8 col-sm-auto d-flex align-self-center p-3 justify-content-center order-md-1 order-sm-0">
@@ -164,7 +166,7 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-5" id="LC-card" style="max-width: 100%;">
+        <div class="card mb-5  bg-transparent shadow-lg" id="LC-card" style="max-width: 100%;">
             <div class="row g-0">
                 <div class="col-md-8 col-sm-auto d-flex align-self-center p-3 justify-content-center">
                     <div id="LC" class="carousel carousel-dark carousel-fade" data-bs-ride="carousel"
@@ -222,16 +224,16 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-5" id="rc-card" style="max-width: 100%;">
+        <div class="card mb-5  bg-transparent shadow-lg" id="rc-card" style="max-width: 100%;">
             <div class="row g-0">
                 <div
                     class="col-md-8 col-sm-auto d-flex align-self-center p-3 justify-content-center order-md-1 order-sm-0">
                     <div id="rc" class="carousel carousel-dark carousel-fade" data-bs-ride="carousel"
                         data-bs-interval="5000">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#waterpump" data-bs-slide-to="0" class="active"
+                            <button type="button" data-bs-target="#rc" data-bs-slide-to="0" class="active"
                                 aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            <button type="button" data-bs-target="#rc" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#rc" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
@@ -266,13 +268,11 @@
                                 </video>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#rc"
-                            data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#rc" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#rc"
-                            data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#rc" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -287,7 +287,7 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-5" id="waterpump-card" style="max-width: 100%;">
+        <div class="card mb-5  bg-transparent shadow-lg" id="waterpump-card" style="max-width: 100%;">
             <div class="row g-0">
                 <div
                     class="col-md-8 col-sm-auto d-flex align-self-center p-3 justify-content-center order-md-1 order-sm-0">

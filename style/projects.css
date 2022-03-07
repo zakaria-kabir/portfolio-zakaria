@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 body,
 html {
   width: 100%;
@@ -7,13 +10,20 @@ html {
 h1,
 h2,
 h3,
-h4
-{
+h4 {
   font-family: 'Hubballi', cursive;
 }
-h5, p, .wrap li {
+h5,
+p,
+.wrap li {
   font-family: 'Comfortaa', cursive;
 }
+/* header */
+.nav-link {
+  color: #ffb0d8;
+  font-size: large;
+}
+/* proj */
 /* .carousel-item {
   transition: transform 2.6s ease-in-out;
 }
@@ -21,18 +31,28 @@ h5, p, .wrap li {
 .carousel-fade .active.carousel-item-end {
   transition: opacity 0s 2.6s;
 } */
-.wrap {
-  background: rgb(148, 167, 233);
-  background: linear-gradient(
-    20deg,
-    rgba(148, 167, 233, 0.6643032212885154) 0%,
-    rgba(232, 242, 244, 0.742734593837535) 31%,
-    rgba(196, 180, 217, 0.7091211484593838) 47%,
-    rgba(86, 215, 221, 0.742734593837535) 63%,
-    rgba(244, 97, 167, 1) 100%
-  );
-
+.carousel-indicators [data-bs-target] {
+    width: 10px; 
+    height: 10px; 
+    border-radius: 100%; 
 }
-.contailer-fluid{
-    margin-top: 7rem;
+.wrap {
+  background: linear-gradient(80deg,#1dffff, #ec524b, #ff65e5, #ffc815);
+  animation: gradient 5s ease infinite;
+  background-size: 400% 400%;
+}
+.contailer-fluid {
+  margin-top: 7rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
