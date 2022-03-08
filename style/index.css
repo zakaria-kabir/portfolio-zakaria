@@ -160,7 +160,7 @@ a {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: rgb(66, 112, 133);
+  background-color: rgba(220, 20, 60, 0.657);
   animation: text_reveal_box 1s ease;
   animation-delay: 0.5s;
 }
@@ -344,7 +344,7 @@ a {
 }
 /* footer */
 #footer {
-  background-color: #8153907c;
+  background-color: #d29aff96;
 }
 .beforeend {
   background: url('../images/backgrounds/bg-dots.png');

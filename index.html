@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/index.css">
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -30,12 +30,12 @@
     <header class="header_area" id="header">
         <nav class="navbar navbar-expand-lg bg-black py-3 shadow-lg" id="mainNav">
             <div class="container-fluid px-4 px-lg-5">
-                <a class="navbar-brand " href="index.html"><img src="./images/logo1.png" alt=""></a>
+                <a class="navbar-brand col-3" href="#"><img src="./images/logo.png" alt=""></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation"><span class=""><img src="./images/options.png"
                             alt=""></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="collapse navbar-collapse col-auto" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item m-1 btn-link text-decoration-none rounded-pill text-center"><a
                                 class="nav-link" href="#">Home</a></li>
@@ -63,7 +63,8 @@
                     <h1 id="">I am<span></span></h1>
                     <h1 class="display-3 text-uppercase" id="name">md. zakaria kabir<span></span></h1>
                     <p class="">Undergraduate Student<span></span></p><br>
-                    <a class="btn text-white border-white text-uppercase cta" href="#about">Explore</a>
+                    <a class="btn text-white border-white text-uppercase cta" href="#about">Explore Me <span><i
+                                class="fa-solid fa-magnifying-glass"></i></span></a>
                 </div>
             </div>
         </div>
@@ -372,7 +373,6 @@
     <section class="bg-dark contact-wrap d-flex flex-column justify-content-center align-self-center min-vh-100"
         id="contact">
         <div class="container contact-container p-md-5" data-aos="flip-right" data-aos-duration="1000">
-            <!-- <img src="/images/moon.png" alt="" id="moon"> -->
             <h2 class="text-center text-light">Contact</h2>
             <hr class="divider divider-light" />
             <div class="row my-5">
@@ -380,23 +380,21 @@
                     <form class="row g-sm-3 ">
                         <div class="col-md-6">
                             <label for="name " class="form-label ">
-                                <p class="text-light">Name</p>
+                                <p class="text-light mb-0">Name</p>
                             </label>
                             <input type="text " class="form-control " id="name " placeholder="Your Name ">
                         </div>
                         <div class="col-md-6 ">
                             <label for="email " class="form-label ">
-                                <p class="text-light">Email</p>
+                                <p class="text-light  mb-0">Email</p>
                             </label>
                             <input type="email " class="form-control " id="email " placeholder="Your email ">
                         </div>
                         <div class="col-12 ">
-                            <label for="texrarea " class="form-label ">
-                                <p class="text-light">Message</p>
+                            <label for="texrarea " class="form-label w-50">
+                                <p class="text-light mb-0">Message</p>
                             </label>
-                            <textarea
-                                style="border-radius: 5px; height: 100px; width: 100%; border: 1px solid rgb(197, 192, 192); "
-                                id="message"></textarea>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
                         </div>
                         <div class="col-12  text-center">
                             <button type="submit" class="btn btn-primary text-light">Send Message <span><i
@@ -423,7 +421,7 @@
             <div class="beforeend row g-0 p-4">
                 <div class="col-md-4">
                     <div class="site-logo my-2">
-                        <a href="#"><img src="./images/logo1.png" alt=""></a>
+                        <a href="#"><img src="./images/brandname.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-md-8">
